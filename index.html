@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Silk &amp; Steel — a 16-bit action tale of the Silk Road</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #0d0a12;
+    overflow: hidden;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+  }
+  #wrap {
+    position: relative;
+    line-height: 0;
+    box-shadow: 0 0 80px rgba(0,0,0,.8);
+    border: 2px solid #2a1f1a;
+  }
+  canvas {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    display: block;
+    background: #000;
+  }
+  #note {
+    position: absolute; left: 0; right: 0; bottom: -28px;
+    text-align: center;
+    font: 12px/1 monospace;
+    color: #6c5a4a;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="320" height="180"></canvas>
+  <div id="note">arrows / WASD move &nbsp;·&nbsp; SPACE jump &nbsp;·&nbsp; X sword &nbsp;·&nbsp; C knife &nbsp;·&nbsp; ENTER start &nbsp;·&nbsp; M music (starts off)</div>
+</div>
+<script type="module" src="js/main.js?v=6"></script>
+</body>
+</html>
